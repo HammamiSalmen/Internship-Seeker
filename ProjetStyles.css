@@ -68,6 +68,31 @@ aside {
     text-align: center;
 }
 
+@keyframes hov {
+    0%, 100% { top: -10px; }
+    50% { top: 10px; }
+}
+
+.left:hover{
+    animation-name: hov;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.middle:hover {
+    animation-name: hov;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.right:hover {
+    animation-name: hov;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
 aside div {
     display:grid;
 }
@@ -193,9 +218,75 @@ blockquote i {
     margin-top: 1rem;
     text-align: right;
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 1200px) {
+    nav{
+        display: none;
+    }
     nav a {
         display: inline-block;
         margin: 0 10px;
     }
+    .main{
+        display: block;
+    }
+    header {
+        background-image: url(22.jpg);
+        background-size: 103%;
+        width: 100%;
+    }
+    footer{
+        font-size: smaller;
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .left,.right,.middle{
+        width: 100%;
+    }
+    .fancy{
+        margin-left: 38%;
+    }
+    section{
+        width: 70%;
+    }
+    aside{
+        width: 30%;
+    }
+    .custom-offcanvas {
+        display: block;
+        color: #ffffff;
+        border-radius: 10px;
+        float: right;
+        padding: 10px;
+    }
+    .custom-offcanvas button {
+        color: #ffffff;
+        background-color: rgb(0, 164, 170); /* Semi-transparent purple */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    /* On hover, make the button stand out */
+    .custom-offcanvas button:hover {
+        background-color: rgba(0, 255, 221, 0.8); /* Lively cyan on hover */
+        color: #000000; /* Black text for contrast */
+    }
+    #offcanvasNavbar a{
+        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+        color: #ffffff; /* White text */
+        border-style: none;
+        padding: 15px;
+    }
+    #offcanvasNavbar ul{
+        width: 40%;
+        float: left;
+    }
 }   
+@media screen and (min-width: 1199px) {
+    .custom-offcanvas {
+        display: none;
+    }
+}

@@ -101,3 +101,51 @@ footer {
     background: #333;
     color: white;
 }
+@media screen and (max-width: 1200px) {
+    nav{
+        display: none;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    section {
+        width: 100%;
+    }
+    .custom-offcanvas {
+        display: block;
+        color: #ffffff;
+        border-radius: 10px;
+        float: right;
+        padding: 10px;
+    }
+    .custom-offcanvas button {
+        color: #ffffff;
+        background-color: rgb(63, 192, 81); /* Semi-transparent purple */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    /* On hover, make the button stand out */
+    .custom-offcanvas button:hover {
+        background-color: rgba(0, 255, 64, 0.808); /* Lively cyan on hover */
+        color: #000000; /* Black text for contrast */
+    }
+    #offcanvasNavbar a{
+        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+        color: #ffffff; /* White text */
+        border-style: none;
+        padding: 15px;
+    }
+    #offcanvasNavbar ul{
+        width: 40%;
+        float: left;
+    }
+}
+@media screen and (min-width: 1199px) {
+    .custom-offcanvas {
+        display: none;
+    }
+}
