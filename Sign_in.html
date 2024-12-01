@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plateforme dédiée à la recherche de stages professionnels, idéale pour étudiants et jeunes diplômés. Trouvez l'opportunité parfaite pour lancer votre carrière.">
+    <meta name="keywords" content="stage, recherche de stage, stages professionnels, étudiants, entreprises, opportunités, carrière, formation">
+    <meta name="author" content="Hammami Salmen">
+    <meta name="robots" content="index, follow">
+    <title>Se Connecter - Trouvez votre stage idéal</title>
+    <title></title>
+    <link rel="stylesheet" href="SignInStyles.css">
+    <link rel="icon" type="image/x-icon" href="32.jpg">
+</head>
+<body>
+    <header>
+        <h1>Se Connecter</h1>
+        <nav>
+            <a href="Home.html" target="_blank">Accueil</a>
+            <a href="Offres.html" target="_blank">Offers</a>
+            <a href="Sign_in.html">Se connecter</a>
+        </nav>
+    </header>
+    <main>
+        <section class="signin-form">
+            <h2>Abonnez-vous aux offres de stages</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Adresse Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="Le mot de passe doit comporter au moins 8 caractères et inclure au moins une lettre majuscule, une lettre minuscule et un chiffre." placeholder="Entrer votre Mot de passe" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer votre mot de passe:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer votre mot de passe" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Se Connecter</button>
+                </div>
+            </form>
+            <p class="note">En vous inscrivant, vous acceptez de recevoir des notifications par e-mail sur les offres de stage.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Réalisé par Hammami Salmen Inf 16 ISET SFAX</p>
+    </footer>
+</body>
+</html>
