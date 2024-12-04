@@ -217,42 +217,124 @@ blockquote i {
     font-size: 0.8em;
     margin-top: 1rem;
     text-align: right;
-}
-@media screen and (max-width: 1200px) {
-    nav{
+} 
+@media screen and (min-width: 1199px) {
+    .custom-offcanvas {
         display: none;
     }
-    nav a {
-        display: inline-block;
-        margin: 0 10px;
+}
+/* General Styles (Default for larger screens) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url(22.jpg);
+    height: 300px;
+    background-size: cover;
+}
+
+header ul {
+    display: flex;
+    float: right;
+}
+
+header li {
+    padding: 5px;
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    border: 2px solid rgba(0, 255, 221, 0.795);
+    color: rgba(0, 255, 221, 0.795);
+    background-color: rgb(38, 0, 100);
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+header li a:hover {
+    background-color: rgba(0, 255, 221, 0.795);
+    color: rgb(38, 0, 100);
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 80%;
+}
+
+aside {
+    width: 20%;
+    background: rgb(164,201,207);
+    background: radial-gradient(circle, rgba(164,201,207,1) 0%, rgba(140,140,140,0.01) 100%);
+}
+
+.main {
+    display: flex;
+}
+
+.left, .middle, .right {
+    width: 33%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background: rgb(164,201,207);
+    background: linear-gradient(356deg, rgba(164,201,207,1) 0%, rgba(140,140,140,0.01) 100%);
+}
+
+.footleft, .footmid, .footright {
+    width: 33%;
+}
+
+/* Responsive Styles for screens between 740px and 1200px */
+@media screen and (max-width: 1200px) and (min-width: 740px) {
+    nav {
+        display: none;
     }
-    .main{
-        display: block;
-    }
+
     header {
         background-image: url(22.jpg);
-        background-size: 103%;
+        background-size: cover;
         width: 100%;
     }
-    footer{
+
+    footer {
         font-size: smaller;
         width: 100%;
     }
+
     iframe {
         width: 100%;
     }
-    .left,.right,.middle{
+
+    .main {
+        display: block;
+    }
+
+    .left, .middle, .right {
         width: 100%;
     }
-    .fancy{
+
+    .fancy {
         margin-left: 38%;
     }
-    section{
+
+    section {
         width: 70%;
     }
-    aside{
+
+    aside {
         width: 30%;
     }
+
     .custom-offcanvas {
         display: block;
         color: #ffffff;
@@ -260,33 +342,97 @@ blockquote i {
         float: right;
         padding: 10px;
     }
+
     .custom-offcanvas button {
         color: #ffffff;
-        background-color: rgb(0, 164, 170); /* Semi-transparent purple */
+        background-color: rgb(0, 164, 170);
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
         font-weight: bold;
     }
-    
-    /* On hover, make the button stand out */
+
     .custom-offcanvas button:hover {
-        background-color: rgba(0, 255, 221, 0.8); /* Lively cyan on hover */
-        color: #000000; /* Black text for contrast */
+        background-color: rgba(0, 255, 221, 0.8);
+        color: #000000;
     }
-    #offcanvasNavbar a{
-        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-        color: #ffffff; /* White text */
+
+    #offcanvasNavbar a {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
         border-style: none;
         padding: 15px;
     }
-    #offcanvasNavbar ul{
+
+    #offcanvasNavbar ul {
         width: 40%;
         float: left;
     }
-}   
-@media screen and (min-width: 1199px) {
-    .custom-offcanvas {
+}
+
+/* Responsive Styles for screens below 740px */
+@media screen and (max-width: 740px) {
+    header {
+        height: 200px;
+    }
+
+    nav {
         display: none;
     }
+
+    .main {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: smaller;
+        width: 100%;
+    }
+
+    .footleft, .footmid, .footright {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .custom-offcanvas {
+        display: block;
+        color: #ffffff;
+        border-radius: 10px;
+        float: none;
+        padding: 10px;
+    }
+
+    .custom-offcanvas button {
+        width: 100%;
+        color: #ffffff;
+        background-color: rgb(0, 164, 170);
+        border: none;
+        padding: 10px 0;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .fancy {
+        margin: 10px auto;
+    }
+
+    .left, .middle, .right {
+        width: 100%;
+    }
 }
+
