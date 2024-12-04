@@ -105,21 +105,20 @@ footer p {
     }
     .custom-offcanvas button {
         color: #ffffff;
-        background-color: rgb(0, 164, 170); /* Semi-transparent purple */
+        background-color: rgb(0, 164, 170);
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
         font-weight: bold;
     }
     
-    /* On hover, make the button stand out */
     .custom-offcanvas button:hover {
-        background-color: rgba(0, 255, 221, 0.8); /* Lively cyan on hover */
-        color: #000000; /* Black text for contrast */
+        background-color: rgba(0, 255, 221, 0.8); 
+        color: #000000; 
     }
     #offcanvasNavbar a{
-        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-        color: #ffffff; /* White text */
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff; 
         border-style: none;
         padding: 15px;
     }
@@ -128,6 +127,207 @@ footer p {
         float: left;
     }
 }
+@media screen and (min-width: 1199px) {
+    .custom-offcanvas {
+        display: none;
+    }
+}
+@media screen and (max-width: 533px) {
+    .custom-offcanvas {
+        display: none;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #003d80;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#default-message {
+    display: none;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+section {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+section:target {
+    display: block;
+}
+
+body:not(:has(section:target)) #default-message {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 740px) {
+    nav {
+        display: none; 
+    }
+
+    .custom-offcanvas {
+        display: block;
+        color: #ffffff;
+        border-radius: 10px;
+        float: right;
+        padding: 10px;
+    }
+
+    .custom-offcanvas button {
+        color: #ffffff;
+        background-color: rgb(0, 164, 170); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .custom-offcanvas button:hover {
+        background-color: rgba(0, 255, 221, 0.8); 
+        color: #000000;
+    }
+
+    #offcanvasNavbar a {
+        background-color: rgba(0, 0, 0, 0.8); 
+        color: #ffffff; 
+        border-style: none;
+        padding: 15px;
+    }
+
+    #offcanvasNavbar ul {
+        width: 40%;
+        float: left;
+    }
+
+    section {
+        width: 100%; 
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .custom-offcanvas {
+        display: block;
+        color: #ffffff;
+        border-radius: 10px;
+        float: none;
+        padding: 10px;
+    }
+
+    .custom-offcanvas button {
+        width: 100%;
+        color: #ffffff;
+        background-color: rgb(0, 164, 170); 
+        border: none;
+        padding: 10px 0;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .custom-offcanvas button:hover {
+        background-color: rgba(0, 255, 221, 0.8);
+        color: #000000;
+    }
+
+    #offcanvasNavbar a {
+        background-color: rgba(0, 0, 0, 0.8); 
+        color: #ffffff; 
+        border-style: none;
+        padding: 15px;
+    }
+
+    section {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.8em; 
+    }
+}
+
 @media screen and (min-width: 1199px) {
     .custom-offcanvas {
         display: none;

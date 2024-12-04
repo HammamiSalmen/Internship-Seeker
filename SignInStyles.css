@@ -111,6 +111,7 @@ footer {
     }
     section {
         width: 100%;
+        justify-content: center;
     }
     .custom-offcanvas {
         display: block;
@@ -121,21 +122,20 @@ footer {
     }
     .custom-offcanvas button {
         color: #ffffff;
-        background-color: rgb(63, 192, 81); /* Semi-transparent purple */
+        background-color: rgb(63, 192, 81); 
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
         font-weight: bold;
     }
     
-    /* On hover, make the button stand out */
     .custom-offcanvas button:hover {
-        background-color: rgba(0, 255, 64, 0.808); /* Lively cyan on hover */
-        color: #000000; /* Black text for contrast */
+        background-color: rgba(0, 255, 64, 0.808); 
+        color: #000000; 
     }
     #offcanvasNavbar a{
-        background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-        color: #ffffff; /* White text */
+        background-color: rgba(0, 0, 0, 0.8); 
+        color: #ffffff;
         border-style: none;
         padding: 15px;
     }

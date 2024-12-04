@@ -223,7 +223,6 @@ blockquote i {
         display: none;
     }
 }
-/* General Styles (Default for larger screens) */
 body {
     margin: 0;
     padding: 0;
@@ -294,7 +293,6 @@ footer {
     width: 33%;
 }
 
-/* Responsive Styles for screens between 740px and 1200px */
 @media screen and (max-width: 1200px) and (min-width: 740px) {
     nav {
         display: none;
@@ -370,7 +368,6 @@ footer {
     }
 }
 
-/* Responsive Styles for screens below 740px */
 @media screen and (max-width: 740px) {
     header {
         height: 200px;
@@ -416,6 +413,10 @@ footer {
         float: none;
         padding: 10px;
     }
+    .custom-offcanvas button:hover {
+        background-color: rgba(0, 255, 221, 0.8);
+        color: #000000;
+    }
 
     .custom-offcanvas button {
         width: 100%;
@@ -426,7 +427,12 @@ footer {
         border-radius: 5px;
         font-weight: bold;
     }
-
+    #offcanvasNavbar a {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        border-style: none;
+        padding: 15px;
+    }
     .fancy {
         margin: 10px auto;
     }
