@@ -24,5 +24,5 @@ Finding internships often means managing dozens of applications across different
 
 ```bash
 # Clone the repository
-git clone [https://github.com/HammamiSalmen/Internship-Seeker.git](https://github.com/HammamiSalmen/Internship-Seeker.git)
+git clone https://github.com/HammamiSalmen/Internship-Seeker.git
 cd Internship-Seeker
